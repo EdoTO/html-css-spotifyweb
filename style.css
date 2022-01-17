@@ -1,0 +1,189 @@
+/* General Rules*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout rules*/
+
+body {
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+    background-color: #282828;
+    padding-bottom: 5px;
+    box-sizing: content-box;
+}
+
+    /* Song Details: Logo / Name / Actions*/
+
+    .song__details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 230px;
+        height: 100%;
+        padding: 0 11px;
+    }
+
+    .song__details__img img {
+        height: 42px;
+    }
+
+    .song__details__name {
+        padding-left: 12px;
+        flex-grow: 1;
+    }
+
+    .song__details__name span:first-child {
+        display: block;
+        margin-bottom: -4px;
+        color: white;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .song__details__name span:last-child {
+        color: #858585;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    #desktop__stretch__fix {
+        display: inline-block;
+    }
+
+        /* Desktop Stretch Fix*/
+
+        @media screen and (max-width: 783px) {
+
+            #desktop__stretch__fix {
+                display: block;
+                margin-top: -4px;
+            }
+
+        }
+
+
+    .song__details__actions {
+        color: #858585;
+    }
+
+    .song__details__actions i:last-child {
+        margin-left: 8px;
+    }
+
+    /* Song Player: Buttons / Loading */    
+
+    .song__player {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 9px;
+        width: 534px;
+        height: 100%;
+        margin: 0 5px;
+    }
+
+    .song__player__buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+        color: white;
+    }
+
+    .song__player__buttons i {
+        font-size: 15px;
+    }
+
+    #play__pause i {
+        font-size: 25px;
+    }
+
+    .song__player__loading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .song__player__minutes {
+        color: white;
+        font-size: 12px;
+    }
+
+    .song__player__load-bar {
+        flex-grow: 1;
+        background-color: #5A5A5A;
+        height: 4px;
+        margin: 0 26px;
+        border-radius: 5px;
+    }
+
+    #load-bar__listened {
+        background-color: white;
+        width: 35%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+
+/* Songs Setting: Playlist / Screen / Volume */
+
+.song__settings {
+    display: flex;
+    gap: 15px;
+    width: 230px;
+    min-width: 151.31px;
+    height: 100%;
+    padding: 0 11px;
+    align-items: center;
+}
+
+.song__settings i{
+    font-size: 14px;
+    color: white;
+}
+
+.volume__settings {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+#settings__volume__bar {
+    width: 25px;
+    height: 4px;
+    background-color: #5A5A5A;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+#volume__level {
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+
+
+/* MAIN */
+
+main {
+    flex-grow: 1;
+}
