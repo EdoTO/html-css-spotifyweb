@@ -1,0 +1,67 @@
+
+
+/* Responsive Functions (Stretch fixes and Devices Adaptation) */
+
+
+/* HEADER (Toolbar) */
+
+@media screen and (max-width: 962px) {
+        
+    .song__details__actions i:last-child {
+        display: block;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 833px) {
+
+    .desktop__stretch__fix {
+        display: block;
+        margin-top: -4px;
+    }
+
+}
+
+
+/* MAIN */
+
+
+/* Sidebar */
+
+@media screen and (max-width: 538px) {
+    
+    .sidebar {
+        width: 66px;
+    }
+
+    .logo img:last-child {
+        display: none;
+    }
+
+    .logo img:first-child {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .sidebar__playlist {
+        display: none;
+    }
+
+    .sidebar__nav span {
+        display: none;
+    }
+
+    #home {
+        border: none;
+    }
+
+    #home i, #search i, #library i {
+        padding: 8px 0;
+        margin: 0 auto;
+    }
+    
+
+}
+
+/* Main Content */

@@ -14,6 +14,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-start;
+    overflow: hidden;
 }
 
 /* HEADER (Toolbar)*/
@@ -59,7 +60,7 @@ header a {
         margin-bottom: -3px;
         color: white;
         font-size: 12px;
-        font-weight: 700;
+        font-weight: 600;
     }
 
     .song__details__name a {
@@ -76,28 +77,6 @@ header a {
     .desktop__stretch__fix {
         display: inline-block;
     }
-
-    
-        /* Desktop Stretch Fix*/
-
-        @media screen and (max-width: 962px) {
-        
-            .song__details__actions i:last-child {
-                display: block;
-                margin: 0;
-            }
-        
-        }
-
-        @media screen and (max-width: 833px) {
-
-            .desktop__stretch__fix {
-                display: block;
-                margin-top: -4px;
-            }
-
-        }
-
 
     .song__details__actions a{
         color: #858585;
@@ -262,7 +241,7 @@ main {
         }
 
         .sidebar__nav span {
-            font-weight: 700;
+            font-weight: 600;
         }
 
         .active:hover {
@@ -312,7 +291,7 @@ main {
 
         #playlist__header {
             font-size: 17px;
-            font-weight: 700;
+            font-weight: 600;
             padding-left: 22px;
             padding-top: 7px;
             padding-bottom: 7px;
@@ -333,7 +312,7 @@ main {
         .create__playlist span {
             font-size: 17px;
             padding-left: 0;
-            font-weight: 700;
+            font-weight: 600;
         }
 
         .your__playlist div {
@@ -343,7 +322,7 @@ main {
         .your__playlist a{
             color: #666666;
             font-size: 15px;
-            font-weight: 700;
+            font-weight: 600;
             padding-left: 22px;
             margin: 8px 0;
         }
@@ -351,7 +330,36 @@ main {
     
     /* Main Content */
         
-    .main-content {
+    .main__content {
         flex-grow: 1;
     }
 
+        /* Main Content First Section */
+
+        .main__toolbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 90px;
+            padding-bottom: 5px;
+            background-color: #080B12;
+        }
+
+        #upgrade__button {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 15px 40px;
+            margin-right: 25px;
+            border-radius: 30px;
+            border: 1px solid white;
+            transition: padding font-size margin linear 300ms;
+            box-sizing: content-box;
+        }
+
+        #upgrade__button:hover {
+            padding: 15.5px 41px;
+            margin: 15px;
+            font-size: 16.2px;
+        }
