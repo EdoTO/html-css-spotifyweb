@@ -48,6 +48,7 @@ header a {
     }
 
     .song__details__name {
+        padding-right: 10px;
         padding-left: 12px;
         flex-grow: 1;
     }
@@ -77,6 +78,15 @@ header a {
 
     
         /* Desktop Stretch Fix*/
+
+        @media screen and (max-width: 950px) {
+        
+            .song__details__actions i:last-child {
+                display: block;
+                margin: 0;
+            }
+        
+        }
 
         @media screen and (max-width: 792px) {
 

@@ -1,14 +1,2 @@
 /* HEADER*/
 
-@media screen and (max-width: 904px) {
-
-    .song__details__name {
-        padding-right: 10px;
-    }
-
-    .song__details__actions i:last-child {
-        display: block;
-        margin: 0;
-    }
-
-}
