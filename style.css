@@ -19,6 +19,7 @@ body {
 /* HEADER (Toolbar)*/
 
 header {
+    position: sticky;
     display: flex;
     height: 90px;
     justify-content: space-between;
@@ -79,7 +80,7 @@ header a {
     
         /* Desktop Stretch Fix*/
 
-        @media screen and (max-width: 950px) {
+        @media screen and (max-width: 962px) {
         
             .song__details__actions i:last-child {
                 display: block;
@@ -88,7 +89,7 @@ header a {
         
         }
 
-        @media screen and (max-width: 822px) {
+        @media screen and (max-width: 833px) {
 
             .desktop__stretch__fix {
                 display: block;
@@ -119,7 +120,7 @@ header a {
         gap: 9px;
         width: 534px;
         height: 100%;
-        margin: 0 10px;
+        margin: 0 16px;
     }
 
     .song__player__buttons {
@@ -153,7 +154,7 @@ header a {
         flex-grow: 1;
         background-color: #5A5A5A;
         height: 4px;
-        margin: 0 26px;
+        margin: 0 20px;
         border-radius: 5px;
     }
 
