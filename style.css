@@ -87,8 +87,12 @@ header a {
         }
 
 
-    .song__details__actions {
+    .song__details__actions a{
         color: #858585;
+    }
+
+    .song__details__actions a:hover{
+        color: white;
     }
 
     .song__details__actions i:last-child {
