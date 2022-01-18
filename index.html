@@ -14,7 +14,12 @@
 </head>
 <body>
     
+    <!-- HEADER (Toolbar) -->
+
     <header>
+
+        <!-- Song Details: Logo / Name / Actions -->
+
         <div class="song__details">
             <div class="song__details__img">
                 <img src="img/sinister.jpeg">
@@ -32,6 +37,9 @@
                 <i class="far fa-folder"></i>
             </div>
         </div>
+
+        <!-- Song Player: Buttons / Loading -->
+
         <div class="song__player">
             <div class="song__player__buttons">
                 <div id="play__random">
@@ -63,6 +71,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- Song Settings: Playlist, Screen, Volume -->
+
         <div class="song__settings"> 
             <div>
                 <i class="fas fa-bars"></i>
@@ -82,12 +93,18 @@
         </div>        
     </header>
 
+    <!-- MAIN -->
+
     <main>
+
+        <!-- Sidebar -->
+
         <div class="sidebar">
-            <div class="logo">
-                <img src="img/logo.svg" alt="">
-            </div>
             <nav class="sidebar__nav">
+                <div class="logo">
+                    <img src="img/logo-small.svg">
+                    <img src="img/logo.svg">
+                </div>
                 <div id="home">
                     <a class="active" href="#">
                         <i class="fas fa-home"></i>
@@ -97,37 +114,54 @@
                 <div id="search">
                     <a class="active" href="#">
                         <i class="fas fa-search"></i>
-                        <span>Search</span>
+                        <span>Cerca</span>
                     </a>
                 </div>
                 <div id="library" class="active">
                     <a class="active" href="#">
                         <i class="fas fa-stream"></i>
-                        <span>Library</span>
+                        <span>La tua libreria</span>
                     </a>
                 </div>
             </nav>
             <div class="sidebar__playlist">
-                <div class="create__playlist">
-                    <div class="sidebar__playlist__header">
-                        <a href="#">
-                            <span>PLAYLIST</span>
-                        </a>
-                        <a class="create__playlist" href="create__playlist">
-                            <i id="new__playlist" class="fas fa-plus-square"></i>
-                        </a>
-                    </div>
-                    <div></div>
+                <div class="sidebar__playlist__header">
+                    <a href="#">
+                        <span id="playlist__header">PLAYLIST</span>
+                    </a>
+                    <a class="create__playlist" href="#">
+                        <i id="new__playlist__button" class="fas fa-plus-square"></i>
+                        <span>Crea Playlist</span>
+                    </a>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="your__playlist">
+                    <div>
+                        <a href="#">Palestra</a>
+                    </div>
+                    <div>
+                        <a href="#">Spiaggia</a>
+                    </div>
+                    <div>
+                        <a href="#">Studio</a>
+                    </div>
+                    <div>
+                        <a href="#">Discoteca</a>
+                    </div>
+                    <div>
+                        <a href="#">Viaggio</a>
+                    </div>
+                    <div>
+                        <a href="#">Classica</a>
+                    </div>
+                    <div>
+                        <a href="#">Divertente</a>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Main Content -->
+
         <div class="main-content">
 
         </div>
