@@ -27,6 +27,11 @@ header {
     box-sizing: content-box;
 }
 
+header a {
+    text-decoration: none;
+    color: white;
+}
+
     /* Song Details: Logo / Name / Actions*/
 
     .song__details {
@@ -49,19 +54,24 @@ header {
 
     .song__details__name span:first-child {
         display: block;
-        margin-bottom: -4px;
+        margin-bottom: -3px;
         color: white;
         font-size: 12px;
         font-weight: 700;
     }
 
-    .song__details__name span:last-child {
+    .song__details__name a {
         color: #858585;
         font-size: 12px;
         font-weight: 600;
     }
 
-    #desktop__stretch__fix {
+    .song__details__name > div:hover a{
+        color: white;
+        text-decoration: underline;
+    }
+
+    .desktop__stretch__fix {
         display: inline-block;
     }
 
@@ -69,7 +79,7 @@ header {
 
         @media screen and (max-width: 783px) {
 
-            #desktop__stretch__fix {
+            .desktop__stretch__fix {
                 display: block;
                 margin-top: -4px;
             }
