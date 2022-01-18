@@ -110,12 +110,13 @@ header a {
         color: white;
     }
 
-    .song__player__buttons i {
-        font-size: 15px;
+    #play__pause {
+        font-size: 25px;
+        transition: font-size linear 40ms;
     }
 
-    #play__pause i {
-        font-size: 25px;
+    #play__pause:hover {
+        font-size: 30px;
     }
 
     .song__player__loading {
@@ -138,10 +139,36 @@ header a {
     }
 
     #load-bar__listened {
+        display: block;
         background-color: white;
         width: 35%;
         height: 100%;
         border-radius: 5px;
+    }
+
+    #load-bar__listened:hover {
+        position: relative;
+        display: block;
+        background-color: rgb(33, 201, 0);
+        width: 35%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    #move__dot {
+        display: none;
+        background-color: white;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+    }
+
+    #load-bar__listened:hover #move__dot {
+        display: block;
     }
 
 
@@ -354,12 +381,12 @@ main {
             margin-right: 25px;
             border-radius: 30px;
             border: 1px solid white;
-            transition: padding font-size margin linear 300ms;
+            transition: all 40ms;
             box-sizing: content-box;
         }
 
         #upgrade__button:hover {
             padding: 15.5px 41px;
             margin: 15px;
-            font-size: 16.2px;
+            font-size: 16.6px;
         }
