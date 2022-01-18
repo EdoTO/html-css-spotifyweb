@@ -22,11 +22,12 @@ body {
 header {
     position: sticky;
     display: flex;
-    height: 90px;
+    min-height: 90px;
     justify-content: space-between;
     background-color: #282828;
     padding-bottom: 5px;
     box-sizing: content-box;
+    z-index: 2;
 }
 
 header a {
@@ -148,10 +149,7 @@ header a {
 
     #load-bar__listened:hover {
         position: relative;
-        display: block;
         background-color: rgb(33, 201, 0);
-        width: 35%;
-        height: 100%;
         border-radius: 5px;
     }
 
@@ -205,12 +203,33 @@ header a {
     }
 
     #volume__level {
+        display: block;
         width: 30%;
         height: 100%;
         background-color: white;
-        border-radius: 5px;
     }
 
+    #volume__level:hover {
+        position: relative;
+        background-color: rgb(33, 201, 0);
+
+    }
+
+    #volume__set {
+        display: none;
+        background-color: white;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+    }
+
+    #volume__level:hover #volume__set {
+        display: block;
+    }
 
 
 
