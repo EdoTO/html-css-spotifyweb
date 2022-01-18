@@ -75,9 +75,10 @@ header a {
         display: inline-block;
     }
 
+    
         /* Desktop Stretch Fix*/
 
-        @media screen and (max-width: 783px) {
+        @media screen and (max-width: 792px) {
 
             .desktop__stretch__fix {
                 display: block;
@@ -108,7 +109,7 @@ header a {
         gap: 9px;
         width: 534px;
         height: 100%;
-        margin: 0 5px;
+        margin: 0 10px;
     }
 
     .song__player__buttons {
