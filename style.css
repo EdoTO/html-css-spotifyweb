@@ -88,7 +88,7 @@ header a {
         
         }
 
-        @media screen and (max-width: 792px) {
+        @media screen and (max-width: 822px) {
 
             .desktop__stretch__fix {
                 display: block;
