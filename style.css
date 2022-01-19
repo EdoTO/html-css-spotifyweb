@@ -436,11 +436,13 @@ main {
             font-weight: 600;
             color: #666666;
         }
-
-        #trending {
-            margin-bottom: -1px;
+        
+        .main__navbar a:hover {
+            color: white;
         }
 
-        .active__main-nav {
+        .main__navbar a.active__main-nav {
+            color: white;
             border-bottom: 1px solid #ADFF2F;
+            margin-bottom: -1px;
         }
