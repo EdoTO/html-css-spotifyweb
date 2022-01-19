@@ -12,8 +12,7 @@ body {
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
+    flex-direction: column;
     overflow: hidden;
 }
 
@@ -21,12 +20,14 @@ body {
 
 header {
     position: sticky;
+    bottom: 0;
     display: flex;
     min-height: 80px;
     justify-content: space-between;
     background-color: #282828;
     padding-bottom: 5px;
     box-sizing: content-box;
+    order: 2;
     z-index: 2;
 }
 
@@ -245,9 +246,17 @@ main {
     .sidebar {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
         width: 230px;
+        height: calc(100vh - 85px);
         background-color: #000000;
+    }
+
+    .sidebar__header {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
 
     .sidebar a {
@@ -371,6 +380,14 @@ main {
             font-weight: 600;
             padding-left: 22px;
             margin: 8px 0;
+        }
+
+        /* Sidebar Footer DA FARE*/
+
+        .sidebar__footer {
+            display: none;
+            border: 1px solid red;
+            min-height: 100px;
         }
 
     
