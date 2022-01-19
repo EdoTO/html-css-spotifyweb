@@ -42,7 +42,7 @@
 
     .logo img:first-child {
         display: block;
-        margin: 13px auto;
+        margin: 13px 10px;
     }
 
     .sidebar__playlist {
@@ -58,7 +58,7 @@
     }
 
     #home i, #search i, #library i {
-        padding: 8px 0;
+        padding: 10px 0;
         margin: 0 auto;
     }
     
