@@ -396,6 +396,7 @@ main {
     .main__content {
         display: flex;
         flex-direction: column;
+        height: calc(100vh - 85px);
         flex-wrap: nowrap;
         flex-grow: 1;
         background-color: #141922;
@@ -406,11 +407,18 @@ main {
         .main__toolbar {
             display: flex;
             justify-content: flex-end;
-            align-items: center;
-            height: 90px;
-            padding-bottom: 5px;
+            min-height: 90px;
             background-color: #080B12;
         }
+
+        .upgrade__button__container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            height: 100%;
+        }
+
+
 
         #upgrade__button {
             text-decoration: none;
@@ -418,7 +426,6 @@ main {
             font-size: 15px;
             font-weight: 600;
             padding: 15px 40px;
-            margin-right: 25px;
             border-radius: 30px;
             border: 1px solid white;
             transition: all 40ms;
@@ -426,9 +433,10 @@ main {
         }
 
         #upgrade__button:hover {
-            padding: 15.5px 41px;
-            margin: 15px;
-            font-size: 16.6px;
+            font-size: 16px;
+            padding: 16px 38px;
+            margin-right: -3px;
+
         }
 
 
@@ -474,9 +482,15 @@ main {
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
+            overflow: scroll;
             flex-grow: 1;
             padding: 15px 25px;
         }
+
+        .main__body::-webkit-scrollbar {
+            display: none;
+          }
+          
 
         .recently__played h2 {
             color: white;
@@ -493,16 +507,17 @@ main {
             position: relative;
             text-decoration: none;
             text-align: center;
+            width: calc(100% / 7);
         }
 
         .song__list img {
-            height: 180px;
+            width: 100%;
         }
 
         .song__hover {
             display: block;
-            width: 180px;
-            height: 180px;
+            width: 100%;
+            aspect-ratio: 1;
             position: absolute;
             top: 0;
             margin: 0 auto;
