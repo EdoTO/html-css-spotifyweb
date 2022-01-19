@@ -22,7 +22,7 @@ body {
 header {
     position: sticky;
     display: flex;
-    min-height: 90px;
+    min-height: 80px;
     justify-content: space-between;
     background-color: #282828;
     padding-bottom: 5px;
@@ -377,6 +377,9 @@ main {
     /* Main Content */
         
     .main__content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
         flex-grow: 1;
         background-color: #141922;
     }
@@ -445,4 +448,74 @@ main {
             color: white;
             border-bottom: 1px solid #ADFF2F;
             margin-bottom: -1px;
+        }
+
+
+        /* Main Body */
+
+        .main__body {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            flex-grow: 1;
+            padding: 15px 25px;
+        }
+
+        .recently__played h2 {
+            color: white;
+        }
+
+        .song__list {
+            padding: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .song__list a {
+            position: relative;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .song__list img {
+            height: 180px;
+        }
+
+        .song__hover {
+            display: block;
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            top: 0;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.404);
+            opacity: 0;
+        }
+
+        .song__hover:hover {
+            opacity: 1;
+        }
+
+        .song__hover i {
+            font-size: 60px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        .song__name {
+            color: white;
+            margin: 5px;
+        }
+
+        .song__subtitle {
+            color: #666666;
+            font-size: 13px;
+        }
+
+        .popular__artists img, .popular__artists .song__hover:hover {
+            border-radius: 50%;
         }
