@@ -378,9 +378,10 @@ main {
         
     .main__content {
         flex-grow: 1;
+        background-color: #141922;
     }
 
-        /* Main Content First Section */
+        /* Main Toolbar */
 
         .main__toolbar {
             display: flex;
@@ -408,4 +409,38 @@ main {
             padding: 15.5px 41px;
             margin: 15px;
             font-size: 16.6px;
+        }
+
+
+        /* Main Navbar */
+
+        .main__navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px 35px;
+        }
+
+        .main__navbar__container {
+            display: flex;
+            justify-content: center;
+            gap: 15px 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .main__navbar a {
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            color: #666666;
+        }
+
+        #trending {
+            margin-bottom: -1px;
+        }
+
+        .active__main-nav {
+            border-bottom: 1px solid #ADFF2F;
         }

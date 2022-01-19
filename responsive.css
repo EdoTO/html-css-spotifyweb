@@ -32,7 +32,8 @@
 @media screen and (max-width: 538px) {
     
     .sidebar {
-        width: 66px;
+        padding-top: 4px;
+        width: 90px;
     }
 
     .logo img:last-child {
@@ -41,7 +42,7 @@
 
     .logo img:first-child {
         display: block;
-        margin: 10px auto;
+        margin: 13px auto;
     }
 
     .sidebar__playlist {
@@ -65,3 +66,6 @@
 }
 
 /* Main Content */
+
+/* Main Toolbar */
+
